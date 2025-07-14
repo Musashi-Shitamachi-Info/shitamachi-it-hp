@@ -2,26 +2,27 @@ export default function Home() {
   return (
     <main>
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-gray-50 to-gray-200 py-20">
-        <div className="max-w-6xl mx-auto px-4">
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4 text-center">
+      <section className="bg-gradient-to-br from-gray-50 to-gray-200 py-12 sm:py-16 md:py-20">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-800 mb-3 sm:mb-4 text-center">
             <span className="inline-block">地域に根ざした</span>
             <span className="inline-block">IT活用支援</span>
           </h1>
-          <p className="text-xl md:text-2xl text-gray-600 mb-8 text-center">
+          <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-600 mb-6 sm:mb-8 text-center">
             <span className="inline-block">多摩地区の事業者様の</span>
             <span className="inline-block">DX推進をお手伝いします</span>
           </p>
-          <p className="text-lg text-gray-500 max-w-2xl mx-auto mb-12 leading-relaxed">
-            現役ITエンジニアが、地域の中小企業・商店のデジタル化を全力でサポート。
+          <p className="text-sm sm:text-base md:text-lg text-gray-500 max-w-xl sm:max-w-2xl mx-auto mb-8 sm:mb-12 leading-relaxed sm:text-center">
+            地域の中小企業・商店のデジタル化を全力でサポート。
             <br className="hidden sm:block" />
-            ホームページ制作からWebアプリ開発、業務効率化まで、ITのお困りごとをワンストップで解決します。
+            <span className="sm:inline-block">ホームページ制作からWebアプリ開発、業務効率化まで、</span>
+            <span className="sm:inline-block">ITのお困りごとをワンストップで解決します。</span>
           </p>
         </div>
         <div className="text-center">
           <a
             href="#contact"
-            className="inline-block bg-gradient-to-r from-red-500 to-red-600 text-white px-10 py-4 rounded-full text-lg font-bold hover:shadow-xl hover:-translate-y-1 transition-all duration-300 shadow-lg"
+            className="inline-block bg-gradient-to-r from-red-500 to-red-600 text-white px-6 py-3 sm:px-8 sm:py-4 lg:px-10 lg:py-4 rounded-full text-base sm:text-lg font-bold hover:shadow-xl hover:-translate-y-1 transition-all duration-300 shadow-lg"
           >
             まずは無料相談から
           </a>
@@ -31,7 +32,7 @@ export default function Home() {
       {/* Services Section */}
       <section id="services" className="py-20 bg-white">
         <div className="max-w-6xl mx-auto px-4">
-          <h2 className="text-4xl font-bold text-center text-gray-800 mb-12">提供サービス</h2>
+          <h2 className="text-4xl font-bold text-center text-gray-800 mb-12">ご提供サービス</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div className="bg-gray-50 p-8 rounded-2xl text-center hover:shadow-xl hover:-translate-y-2 transition-all duration-300 border border-gray-200">
               <div className="text-5xl mb-4">🌐</div>
