@@ -1,3 +1,5 @@
+import NavLink from "./NavLink";
+
 export default function Header() {
   return (
     <header className="bg-gradient-to-r from-blue-700 to-blue-600 text-white p-4 w-full shadow-lg sticky top-0 z-50">
@@ -5,27 +7,11 @@ export default function Header() {
         <div className="flex flex-col md:flex-row justify-between items-center gap-4">
           <div className="text-2xl font-bold text-white">武蔵下町情報舎</div>
           <nav>
-            <ul className="flex gap-4 md:gap-8">
-              <li>
-                <a href="#services" className="hover:text-red-200 transition-colors font-medium">
-                  サービス
-                </a>
-              </li>
-              <li>
-                <a href="#strengths" className="hover:text-red-200 transition-colors font-medium">
-                  強み
-                </a>
-              </li>
-              <li>
-                <a href="#area" className="hover:text-red-200 transition-colors font-medium">
-                  対応地域
-                </a>
-              </li>
-              <li>
-                <a href="#contact" className="hover:text-red-200 transition-colors font-medium">
-                  お問い合わせ
-                </a>
-              </li>
+            <ul className="flex gap-2 md:gap-4">
+              <NavLink href="#services">サービス</NavLink>
+              <NavLink href="#strengths">強み</NavLink>
+              <NavLink href="#area">対応地域</NavLink>
+              <NavLink href="#contact">お問い合わせ</NavLink>
             </ul>
           </nav>
         </div>
