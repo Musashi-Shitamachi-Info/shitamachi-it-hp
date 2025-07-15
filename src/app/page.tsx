@@ -1,4 +1,5 @@
 import ServiceCard from "@/components/service-card";
+import StrengthCard from "@/components/strength-card";
 
 export default function Home() {
   return (
@@ -45,29 +46,23 @@ export default function Home() {
       </section>
 
       {/* Strengths Section */}
-      <section id="strengths" className="py-20 bg-gradient-to-br from-gray-50 to-gray-200">
-        <div className="max-w-6xl mx-auto px-4">
-          <h2 className="text-4xl font-bold text-center text-gray-800 mb-12">武蔵下町情報舎の強み</h2>
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-            <div className="bg-white p-10 rounded-2xl shadow-lg">
-              <h3 className="text-xl font-bold text-blue-700 mb-4">💻 現役エンジニアの技術力</h3>
-              <p className="text-gray-600 leading-loose">
-                現役のWebエンジニアとして最新の技術動向に精通。単なる制作にとどまらず、SEO対策、セキュリティ対策、パフォーマンス最適化まで技術的な観点から質の高いサービスを提供します。
-              </p>
-            </div>
-            <div className="bg-white p-10 rounded-2xl shadow-lg">
-              <h3 className="text-xl font-bold text-blue-700 mb-4">🏪 地域密着の手厚いサポート</h3>
-              <p className="text-gray-600 leading-loose">
-                地域に住み、地域の事業者との距離が近いからこそ実現できるきめ細やかなサポート。急なトラブル対応や機能追加にも迅速に対応し、導入後の運用支援まで継続的にサポートします。
-              </p>
-            </div>
-            <div className="bg-white p-10 rounded-2xl shadow-lg">
-              <h3 className="text-xl font-bold text-blue-700 mb-4">🎯 ワンストップIT支援</h3>
-              <p className="text-gray-600 leading-loose">
-                ホームページ制作だけでなく、Webアプリ開発、ITツール導入、SNS活用まで幅広く対応。事業成長に合わせて段階的にサービスを拡張でき、一つの窓口で全てのIT課題を解決できます。
-              </p>
-            </div>
-          </div>
+      <section id="strengths" className="py-12 sm:py-16 md:py-20 bg-gradient-to-br from-gray-50 to-gray-200">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center text-gray-800 mb-8 sm:mb-10 md:mb-12">武蔵下町情報舎の強み</h2>
+          <ul className="grid grid-cols-1 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8 list-none">
+            <StrengthCard
+              title="💻 現場で培った技術力"
+              description="ただホームページを作るだけでなく、「検索で見つけてもらいやすくする工夫」や「安全に使えるサイト作り」など、お客様のビジネスに本当に役立つ技術を提供します。"
+            />
+            <StrengthCard
+              title="🏪 地域密着のサポート"
+              description="地域に住み、地域の事業者との距離が近いからこそ実現できるきめ細やかなサポート。急なトラブル対応や機能追加にも迅速に対応し、導入後の運用支援まで継続的にサポートします。"
+            />
+            <StrengthCard
+              title="🎯 ワンストップIT支援"
+              description="Webアプリ開発、ITツール導入、SNS活用まで幅広く対応。事業成長に合わせて段階的にサービスを拡張でき、一つの窓口で全てのIT課題を解決できます。"
+            />
+          </ul>
         </div>
       </section>
 
