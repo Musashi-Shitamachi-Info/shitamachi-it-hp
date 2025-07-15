@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <main>
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-gray-50 to-gray-200 py-12 sm:py-16 md:py-20">
+      <section id="top" className="bg-gradient-to-br from-gray-50 to-gray-200 py-12 sm:py-16 md:py-20">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-800 mb-3 sm:mb-4 text-center">
             <span className="inline-block">地域に根ざした</span>
