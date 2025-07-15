@@ -1,3 +1,5 @@
+import ServiceCard from "@/components/service-card";
+
 export default function Home() {
   return (
     <main>
@@ -30,31 +32,15 @@ export default function Home() {
       </section>
 
       {/* Services Section */}
-      <section id="services" className="py-20 bg-white">
-        <div className="max-w-6xl mx-auto px-4">
-          <h2 className="text-4xl font-bold text-center text-gray-800 mb-12">ご提供サービス</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <div className="bg-gray-50 p-8 rounded-2xl text-center hover:shadow-xl hover:-translate-y-2 transition-all duration-300 border border-gray-200">
-              <div className="text-5xl mb-4">🌐</div>
-              <h3 className="text-xl font-semibold text-gray-800 mb-4">ホームページ制作</h3>
-              <p className="text-gray-600 leading-relaxed">集客につながるSEO対策済みのホームページを制作。スマホ対応、保守サポート付きで安心です。</p>
-            </div>
-            <div className="bg-gray-50 p-8 rounded-2xl text-center hover:shadow-xl hover:-translate-y-2 transition-all duration-300 border border-gray-200">
-              <div className="text-5xl mb-4">⚡</div>
-              <h3 className="text-xl font-semibold text-gray-800 mb-4">Webアプリケーション開発</h3>
-              <p className="text-gray-600 leading-relaxed">顧客管理や予約システムなど、業務に特化したWebアプリケーションをカスタム開発いたします。</p>
-            </div>
-            <div className="bg-gray-50 p-8 rounded-2xl text-center hover:shadow-xl hover:-translate-y-2 transition-all duration-300 border border-gray-200">
-              <div className="text-5xl mb-4">🛠️</div>
-              <h3 className="text-xl font-semibold text-gray-800 mb-4">ITツール導入支援</h3>
-              <p className="text-gray-600 leading-relaxed">クラウドサービスや業務効率化ツールの選定から導入、運用サポートまで一貫してお手伝いします。</p>
-            </div>
-            <div className="bg-gray-50 p-8 rounded-2xl text-center hover:shadow-xl hover:-translate-y-2 transition-all duration-300 border border-gray-200">
-              <div className="text-5xl mb-4">📱</div>
-              <h3 className="text-xl font-semibold text-gray-800 mb-4">SNS活用支援</h3>
-              <p className="text-gray-600 leading-relaxed">Instagram、Facebook等のSNSを活用した集客支援。投稿企画から運用代行まで対応可能です。</p>
-            </div>
-          </div>
+      <section id="services" className="py-12 sm:py-16 md:py-20 bg-white">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center text-gray-800 mb-8 sm:mb-10 md:mb-12">ご提供サービス</h2>
+          <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 md:gap-8 list-none">
+            <ServiceCard icon="🌐" title="ホームページ制作" description="集客につながるSEO対策済みのホームページを制作。スマホ対応、保守サポート付きで安心です。" />
+            <ServiceCard icon="⚡" title="Webアプリケーション開発" description="顧客管理や予約システムなど、業務に特化したWebアプリケーションをカスタム開発いたします。" />
+            <ServiceCard icon="🛠️" title="ITツール導入支援" description="クラウドサービスや業務効率化ツールの選定から導入、運用サポートまで一貫してお手伝いします。" />
+            <ServiceCard icon="📱" title="SNS活用支援" description="Instagram、Facebook等のSNS導入支援。アカウント設定やホームページ連携まで幅広く対応します。" />
+          </ul>
         </div>
       </section>
 
