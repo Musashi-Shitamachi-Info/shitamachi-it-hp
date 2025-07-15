@@ -1,5 +1,6 @@
 import ServiceCard from "@/components/service-card";
 import StrengthCard from "@/components/strength-card";
+import TargetArea from "@/components/target-area";
 
 export default function Home() {
   return (
@@ -67,25 +68,18 @@ export default function Home() {
       </section>
 
       {/* Target Area Section */}
-      <section id="area" className="py-20 bg-white text-center">
-        <div className="max-w-6xl mx-auto px-4">
-          <h2 className="text-4xl font-bold text-gray-800 mb-8">対応地域</h2>
-          <p className="text-lg text-gray-600 mb-8">武蔵の国・多摩地区を中心にサービスを提供しています</p>
-          <div className="flex flex-wrap justify-center gap-4 mb-8">
-            <span className="bg-gradient-to-r from-blue-700 to-blue-600 text-white px-6 py-3 rounded-full font-medium">府中市</span>
-            <span className="bg-gradient-to-r from-blue-700 to-blue-600 text-white px-6 py-3 rounded-full font-medium">国分寺市</span>
-            <span className="bg-gradient-to-r from-blue-700 to-blue-600 text-white px-6 py-3 rounded-full font-medium">小金井市</span>
-            <span className="bg-gradient-to-r from-blue-700 to-blue-600 text-white px-6 py-3 rounded-full font-medium">国立市</span>
-            <span className="bg-gradient-to-r from-blue-700 to-blue-600 text-white px-6 py-3 rounded-full font-medium">立川市</span>
-            <span className="bg-gradient-to-r from-blue-700 to-blue-600 text-white px-6 py-3 rounded-full font-medium">調布市</span>
-            <span className="bg-gradient-to-r from-blue-700 to-blue-600 text-white px-6 py-3 rounded-full font-medium">三鷹市</span>
-            <span className="bg-gradient-to-r from-blue-700 to-blue-600 text-white px-6 py-3 rounded-full font-medium">武蔵野市</span>
-            <span className="bg-gradient-to-r from-blue-700 to-blue-600 text-white px-6 py-3 rounded-full font-medium">狛江市</span>
-            <span className="bg-gradient-to-r from-blue-700 to-blue-600 text-white px-6 py-3 rounded-full font-medium">多摩市</span>
-            <span className="bg-gradient-to-r from-blue-700 to-blue-600 text-white px-6 py-3 rounded-full font-medium">稲城市</span>
-            <span className="bg-gradient-to-r from-blue-700 to-blue-600 text-white px-6 py-3 rounded-full font-medium">その他多摩地区</span>
-          </div>
-          <p className="text-gray-500">※上記以外の地域もご相談ください。リモート対応も可能です。</p>
+      <section id="area" className="py-12 sm:py-16 md:py-20 bg-white text-center">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-800 mb-4 sm:mb-6 md:mb-8">対応地域</h2>
+          <p className="text-base sm:text-lg text-gray-600 mb-6 sm:mb-8">
+            <span className="inline-block">多摩地区を中心に</span>
+            <span className="inline-block">サービスを提供しています</span>
+          </p>
+          <TargetArea />
+          <p className="text-sm sm:text-base text-gray-500">
+            <span className="inline-block">※上記以外の地域もご相談ください。</span>
+            <span className="inline-block">リモート対応も可能です。</span>
+          </p>
         </div>
       </section>
 
