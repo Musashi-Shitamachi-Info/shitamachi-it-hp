@@ -99,25 +99,29 @@ export default function Home() {
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="py-20 bg-gray-800 text-white text-center">
-        <div className="max-w-4xl mx-auto px-4">
-          <h2 className="text-4xl font-bold mb-8">お問い合わせ</h2>
-          <p className="text-lg mb-12 leading-relaxed">
-            ITに関するお困りごとは、お気軽にご相談ください。
-            <br />
-            初回相談は無料で承っております。
+      <section id="contact" className="py-12 sm:py-16 md:py-20 bg-gray-800 text-white text-center">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-6 sm:mb-8">お問い合わせ</h2>
+          <p className="text-base sm:text-lg mb-8 sm:mb-10 md:mb-12 leading-relaxed">
+            <span className="inline-block">ITに関するお困りごとは、</span>
+            <span className="inline-block">お気軽にご相談ください。</span>
+            <br className="hidden sm:block" />
+            <span className="inline-block">初回相談は無料で承っております。</span>
           </p>
-          <div className="space-y-8">
+          <div className="space-y-6 sm:space-y-8">
             <div>
-              <p className="text-xl mb-4">📞 電話でのお問い合わせ</p>
-              <p className="text-2xl font-bold mb-8">080-XXXX-XXXX</p>
+              <p className="text-lg sm:text-xl mb-3 sm:mb-4">📞 電話でのお問い合わせ</p>
+              <p className="text-xl sm:text-2xl font-bold mb-6 sm:mb-8">080-XXXX-XXXX</p>
             </div>
             <div>
-              <p className="text-xl mb-4">📧 メールでのお問い合わせ</p>
-              <p className="text-xl font-bold">info@musashi-shimomachi.jp</p>
+              <p className="text-lg sm:text-xl mb-3 sm:mb-4">📧 メールでのお問い合わせ</p>
+              <p className="text-lg sm:text-xl font-bold">info@musashi-shimomachi.jp</p>
             </div>
           </div>
-          <p className="text-gray-400 mt-8">営業時間：平日 9:00〜18:00（土日祝日もご相談可能）</p>
+          <p className="text-sm sm:text-base text-gray-400 mt-6 sm:mt-8">
+            <span className="inline-block">営業時間：平日 9:00〜18:00</span>
+            <span className="inline-block">（土日祝日もご相談可能）</span>
+          </p>
         </div>
       </section>
     </main>
