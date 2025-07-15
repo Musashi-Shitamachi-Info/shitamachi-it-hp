@@ -84,17 +84,15 @@ export default function Home() {
       </section>
 
       {/* About Section */}
-      <section className="py-20 bg-gradient-to-br from-green-50 to-green-100">
-        <div className="max-w-4xl mx-auto px-4 text-center">
-          <h2 className="text-4xl font-bold text-gray-800 mb-12">武蔵下町情報舎について</h2>
-          <div className="space-y-6">
-            <p className="text-lg text-gray-700 leading-loose">
-              地域の中小企業や商店では、デジタル化の波に取り残されているケースが少なくありません。 私たちは、現役ITエンジニアの技術力と地域密着のサポート力を活かして、
-              こうした地域の課題をITの力で解決したいと考えています。
+      <section className="py-12 sm:py-16 md:py-20 bg-gradient-to-br from-green-50 to-green-100">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-800 mb-8 sm:mb-10 md:mb-12">武蔵下町情報舎について</h2>
+          <div className="space-y-4 sm:space-y-6">
+            <p className="text-base sm:text-lg text-gray-700 leading-relaxed sm:leading-loose text-left">
+              地域の中小企業や商店では、デジタル化の波に取り残されているケースが少なくありません。私たちは、現場で培った技術力と地域密着のサポート力を活かして、こうした地域の課題をITの力で解決したいと考えています。
             </p>
-            <p className="text-lg text-gray-700 leading-loose">
-              単にシステムを作るだけでなく、お客様の立場に立って本当に必要な機能を見極め、 使いやすく効果的なITソリューションを提供します。
-              ITの力で地域の事業者の成長を支援し、地域全体の活性化に貢献することが私たちの目標です。
+            <p className="text-base sm:text-lg text-gray-700 leading-relaxed sm:leading-loose text-left">
+              単にシステムを作るだけでなく、お客様の立場に立って本当に必要な機能を見極め、使いやすく効果的なITソリューションを提供します。ITの力で地域の事業者の成長を支援し、地域全体の活性化に貢献することが私たちの目標です。
             </p>
           </div>
         </div>
