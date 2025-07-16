@@ -1,1 +1,39 @@
 @import "tailwindcss";
+
+@theme {
+  --color-pearl-bush-50: #f8f6f4;
+  --color-pearl-bush-100: #efece5;
+  --color-pearl-bush-200: #e2dcd1;
+  --color-pearl-bush-300: #c8bca9;
+  --color-pearl-bush-400: #b29e85;
+  --color-pearl-bush-500: #a2896d;
+  --color-pearl-bush-600: #957961;
+  --color-pearl-bush-700: #7c6352;
+  --color-pearl-bush-800: #665246;
+  --color-pearl-bush-900: #53443b;
+  --color-pearl-bush-950: #2c231e;
+
+  --color-tasman-50: #f2f7f3;
+  --color-tasman-100: #d1e2d4;
+  --color-tasman-200: #c2d8c7;
+  --color-tasman-300: #99bca3;
+  --color-tasman-400: #6d9a7c;
+  --color-tasman-500: #4d7c5e;
+  --color-tasman-600: #396248;
+  --color-tasman-700: #2e4e3b;
+  --color-tasman-800: #263f30;
+  --color-tasman-900: #203429;
+  --color-tasman-950: #111d16;
+
+  --color-mischka-50: #f5f7f9;
+  --color-mischka-100: #e8ebf1;
+  --color-mischka-200: #d1d7e2;
+  --color-mischka-300: #bcc5d4;
+  --color-mischka-400: #9ba8bf;
+  --color-mischka-500: #838fae;
+  --color-mischka-600: #717b9f;
+  --color-mischka-700: #656c90;
+  --color-mischka-800: #565a77;
+  --color-mischka-900: #474c61;
+  --color-mischka-950: #2e313d;
+}

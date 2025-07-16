@@ -1,12 +1,14 @@
 import ServiceCard from "@/components/service-card";
 import StrengthCard from "@/components/strength-card";
 import TargetArea from "@/components/target-area";
+import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
     <main>
       {/* Hero Section */}
-      <section id="top" className="bg-gradient-to-br from-gray-50 to-gray-200 py-12 sm:py-16 md:py-20">
+      <section id="top" className="py-12 sm:py-16 md:py-20">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-800 mb-3 sm:mb-4 text-center">
             <span className="inline-block">地域に根ざした</span>
@@ -34,7 +36,7 @@ export default function Home() {
       </section>
 
       {/* Services Section */}
-      <section id="services" className="py-12 sm:py-16 md:py-20 bg-white">
+      <section id="services" className="py-12 sm:py-16 md:py-20 bg-gradient-to-br from-tasman-50 to-tasman-100">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center text-gray-800 mb-8 sm:mb-10 md:mb-12">ご提供サービス</h2>
           <ul className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 md:gap-8 list-none">
@@ -47,7 +49,7 @@ export default function Home() {
       </section>
 
       {/* Strengths Section */}
-      <section id="strengths" className="py-12 sm:py-16 md:py-20 bg-gradient-to-br from-gray-50 to-gray-200">
+      <section id="strengths" className="py-12 sm:py-16 md:py-20">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center text-gray-800 mb-8 sm:mb-10 md:mb-12">武蔵下町情報舎の強み</h2>
           <ul className="grid grid-cols-1 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8 list-none">
@@ -68,7 +70,7 @@ export default function Home() {
       </section>
 
       {/* Target Area Section */}
-      <section id="area" className="py-12 sm:py-16 md:py-20 bg-white text-center">
+      <section id="area" className="py-12 sm:py-16 text-center bg-gradient-to-br from-mischka-50 to-mischka-100">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-800 mb-4 sm:mb-6 md:mb-8">対応地域</h2>
           <p className="text-base sm:text-lg text-gray-600 mb-6 sm:mb-8">
@@ -84,15 +86,18 @@ export default function Home() {
       </section>
 
       {/* About Section */}
-      <section className="py-12 sm:py-16 md:py-20 bg-gradient-to-br from-green-50 to-green-100">
+      <section className="py-12 sm:py-16 md:py-20">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-800 mb-8 sm:mb-10 md:mb-12">武蔵下町情報舎について</h2>
+          <div className="flex items-center justify-center gap-2 sm:gap-4 mb-8 sm:mb-10 md:mb-12">
+            <Image src="/logo.png" alt="" width="48" height="48" className="rounded" />
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-800">武蔵下町情報舎について</h2>
+          </div>
           <div className="space-y-4 sm:space-y-6">
             <p className="text-base sm:text-lg text-gray-700 leading-relaxed sm:leading-loose text-left">
               地域の中小企業や商店では、デジタル化の波に取り残されているケースが少なくありません。私たちは、現場で培った技術力と地域密着のサポート力を活かして、こうした地域の課題をITの力で解決したいと考えています。
             </p>
             <p className="text-base sm:text-lg text-gray-700 leading-relaxed sm:leading-loose text-left">
-              単にシステムを作るだけでなく、お客様の立場に立って本当に必要な機能を見極め、使いやすく効果的なITソリューションを提供します。ITの力で地域の事業者の成長を支援し、地域全体の活性化に貢献することが私たちの目標です。
+              私たち武蔵下町情報舎は、単にシステムを作るだけでなくお客様の立場に立って本当に必要な機能を見極め、使いやすく効果的なITソリューションを提供します。ITの力で地域の事業者の成長を支援し、地域全体の活性化に貢献して参ります。
             </p>
           </div>
         </div>
@@ -102,23 +107,24 @@ export default function Home() {
       <section id="contact" className="py-12 sm:py-16 md:py-20 bg-gray-800 text-white text-center">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-6 sm:mb-8">お問い合わせ</h2>
-          <p className="text-base sm:text-lg mb-8 sm:mb-10 md:mb-12 leading-relaxed">
+
+          <p className="text-base sm:text-lg mb-6 sm:mb-8 leading-relaxed">
             <span className="inline-block">ITに関するお困りごとは、</span>
             <span className="inline-block">お気軽にご相談ください。</span>
             <br className="hidden sm:block" />
             <span className="inline-block">初回相談は無料で承っております。</span>
           </p>
-          <div className="space-y-6 sm:space-y-8">
-            <div>
-              <p className="text-lg sm:text-xl mb-3 sm:mb-4">📞 電話でのお問い合わせ</p>
-              <p className="text-xl sm:text-2xl font-bold mb-6 sm:mb-8">080-XXXX-XXXX</p>
-            </div>
-            <div>
-              <p className="text-lg sm:text-xl mb-3 sm:mb-4">📧 メールでのお問い合わせ</p>
-              <p className="text-lg sm:text-xl font-bold">info@musashi-shimomachi.jp</p>
-            </div>
-          </div>
-          <p className="text-sm sm:text-base text-gray-400 mt-6 sm:mt-8">
+
+          <Link
+            href="https://docs.google.com/forms/d/e/1FAIpQLSfM6u1weCuTx58dzygIwtnU-4hToUcPHQaA8Qd0oZbhcPWaZQ/viewform?usp=dialog"
+            className="inline-block bg-gradient-to-r from-red-500 to-red-600 text-white px-6 py-3 sm:px-8 sm:py-4 lg:px-10 lg:py-4 rounded-full text-base sm:text-lg font-bold hover:shadow-xl hover:-translate-y-1 transition-all duration-300 shadow-lg"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            ご相談はこちらから
+          </Link>
+
+          <p className="text-sm sm:text-base mt-6 sm:mt-8">
             <span className="inline-block">営業時間：平日 9:00〜18:00</span>
             <span className="inline-block">（土日祝日もご相談可能）</span>
           </p>
