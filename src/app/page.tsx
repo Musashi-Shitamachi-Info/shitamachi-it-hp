@@ -26,12 +26,12 @@ export default function Home() {
           </p>
         </div>
         <div className="text-center">
-          <a
+          <Link
             href="#contact"
             className="inline-block bg-gradient-to-r from-red-500 to-red-600 text-white px-6 py-3 sm:px-8 sm:py-4 lg:px-10 lg:py-4 rounded-full text-base sm:text-lg font-bold hover:shadow-xl hover:-translate-y-1 transition-all duration-300 shadow-lg"
           >
             まずは無料相談から
-          </a>
+          </Link>
         </div>
       </section>
 
