@@ -1,3 +1,4 @@
+import { GoogleTagManager } from "@next/third-parties/google";
 import type { Metadata } from "next";
 import { Noto_Sans_JP } from "next/font/google";
 
@@ -26,6 +27,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ja" className={`${notoSansJp.className} scroll-smooth`}>
+      <GoogleTagManager gtmId="GTM-WP3VK7M3" />
       <body>
         <Header />
         {children}
