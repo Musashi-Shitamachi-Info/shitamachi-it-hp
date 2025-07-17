@@ -16,6 +16,18 @@
     {
       "selector": "StrengthCard",
       "as": "li"
+    },
+    {
+      "selector": "NavLink",
+      "as": "li"
     }
-  ]
+  ],
+  "overrideMode": "merge",
+  "overrides": {
+    "./src/components/*": {
+      "rules": {
+        "heading-levels": false
+      }
+    }
+  }
 }

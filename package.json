@@ -9,7 +9,7 @@
     "lint": "npm run lint:next && npm run lint:eslint && npm run lint:markuplint",
     "lint:next": "next lint",
     "lint:eslint": "eslint . --ext .js,.jsx,.ts,.tsx,.mjs",
-    "lint:markuplint": "markuplint \"./src/app/**/*.{jsx,tsx}\"",
+    "lint:markuplint": "markuplint \"./src/**/*.{jsx,tsx}\"",
     "preview": "opennextjs-cloudflare build && opennextjs-cloudflare preview",
     "deploy": "opennextjs-cloudflare build && opennextjs-cloudflare deploy",
     "cf-typegen": "wrangler types --env-interface CloudflareEnv cloudflare-env.d.ts"
