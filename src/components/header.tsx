@@ -1,4 +1,5 @@
 import Image from "next/image";
+
 import NavLink from "./NavLink";
 
 export default function Header() {

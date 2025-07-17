@@ -6,7 +6,10 @@
     "dev": "next dev",
     "build": "next build",
     "start": "npx serve@latest out",
-    "lint": "next lint",
+    "lint": "npm run lint:next && npm run lint:eslint && npm run lint:markuplint",
+    "lint:next": "next lint",
+    "lint:eslint": "eslint . --ext .js,.jsx,.ts,.tsx,.mjs",
+    "lint:markuplint": "markuplint \"./src/app/**/*.{jsx,tsx}\"",
     "preview": "opennextjs-cloudflare build && opennextjs-cloudflare preview",
     "deploy": "opennextjs-cloudflare build && opennextjs-cloudflare deploy",
     "cf-typegen": "wrangler types --env-interface CloudflareEnv cloudflare-env.d.ts"
@@ -19,12 +22,16 @@
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
+    "@markuplint/jsx-parser": "^4.7.19",
+    "@markuplint/react-spec": "^4.5.19",
     "@tailwindcss/postcss": "^4",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "eslint": "^9",
     "eslint-config-next": "15.3.5",
+    "eslint-plugin-unused-imports": "^4.1.4",
+    "markuplint": "^4.12.0",
     "tailwindcss": "^4",
     "typescript": "^5",
     "wrangler": "^4.24.4"

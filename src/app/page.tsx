@@ -1,8 +1,9 @@
+import Image from "next/image";
+import Link from "next/link";
+
 import ServiceCard from "@/components/service-card";
 import StrengthCard from "@/components/strength-card";
 import TargetArea from "@/components/target-area";
-import Image from "next/image";
-import Link from "next/link";
 
 export default function Home() {
   return (
