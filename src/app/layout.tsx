@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import { Noto_Sans_JP } from "next/font/google";
 
 import "./globals.css";
+import Footer from "@/components/footer";
 import Header from "@/components/header";
 
 export const metadata: Metadata = {
@@ -31,6 +32,7 @@ export default function RootLayout({
       <body>
         <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );
