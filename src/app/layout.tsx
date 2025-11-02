@@ -7,6 +7,7 @@ import Footer from "@/components/footer";
 import Header from "@/components/header";
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://shitamachi-it.work"),
   title: "武蔵下町情報舎",
   description: "武蔵下町情報舎はITの力で地域の事業者の成長を支援し、地域全体の活性化に貢献して参ります。",
 };
