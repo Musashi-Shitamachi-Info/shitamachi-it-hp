@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "lint": "npm run lint:typecheck && npm run lint:next && npm run lint:eslint && npm run lint:markuplint",
+    "lint": "pnpm lint:typecheck && pnpm lint:next && pnpm lint:eslint && pnpm lint:markuplint",
     "lint:next": "next lint",
     "lint:eslint": "eslint . --ext .js,.jsx,.ts,.tsx,.mjs",
     "lint:markuplint": "markuplint \"./src/**/*.{jsx,tsx}\"",
@@ -15,26 +15,26 @@
     "cf-typegen": "wrangler types --env-interface CloudflareEnv cloudflare-env.d.ts"
   },
   "dependencies": {
-    "@next/third-parties": "^15.4.1",
-    "@opennextjs/cloudflare": "^1.5.1",
-    "next": "^15.3.5",
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "@next/third-parties": "^15.5.12",
+    "@opennextjs/cloudflare": "^1.16.5",
+    "next": "^15.5.12",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4"
   },
   "devDependencies": {
-    "@eslint/eslintrc": "^3",
-    "@markuplint/jsx-parser": "^4.7.19",
-    "@markuplint/react-spec": "^4.5.19",
-    "@tailwindcss/postcss": "^4",
-    "@types/node": "^20",
-    "@types/react": "^19",
-    "@types/react-dom": "^19",
-    "eslint": "^9",
+    "@eslint/eslintrc": "^3.3.3",
+    "@markuplint/jsx-parser": "^4.7.23",
+    "@markuplint/react-spec": "^4.5.23",
+    "@tailwindcss/postcss": "^4.2.0",
+    "@types/node": "^20.19.33",
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
+    "eslint": "^9.39.3",
     "eslint-config-next": "15.3.5",
-    "eslint-plugin-unused-imports": "^4.1.4",
-    "markuplint": "^4.12.0",
-    "tailwindcss": "^4",
-    "typescript": "^5",
-    "wrangler": "^4.24.4"
+    "eslint-plugin-unused-imports": "^4.4.1",
+    "markuplint": "^4.14.1",
+    "tailwindcss": "^4.2.0",
+    "typescript": "^5.9.3",
+    "wrangler": "^4.67.0"
   }
 }
