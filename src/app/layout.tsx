@@ -4,7 +4,6 @@ import { Noto_Sans_JP } from "next/font/google";
 
 import "./globals.css";
 import Footer from "@/components/footer";
-import Header from "@/components/header";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://shitamachi-it.work"),
@@ -34,7 +33,6 @@ export default function RootLayout({
     <html lang="ja" className={`${notoSansJp.className} scroll-smooth`}>
       <GoogleTagManager gtmId="GTM-WP3VK7M3" />
       <body>
-        <Header />
         {children}
         <Footer />
       </body>
