@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "リンク集 | 武蔵下町情報舎",
+  title: "リンク集",
   description: "武蔵下町情報舎のSNS・リンク一覧ページ",
 };
 

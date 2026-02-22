@@ -1,3 +1,10 @@
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "プライバシーポリシー",
+  description: "武蔵下町情報舎のプライバシーポリシーページ",
+};
+
 export default function PrivacyPage() {
   return (
     <main>
@@ -7,16 +14,12 @@ export default function PrivacyPage() {
 
           <div className="space-y-6 sm:space-y-8 text-gray-700">
             <div>
-              <p className="text-sm sm:text-base leading-relaxed">
-                武蔵下町情報舎（以下「当社」といいます。）は、お客様の個人情報の重要性を認識し、個人情報保護法及び関連法令等を遵守するとともに、以下のプライバシーポリシー（以下「本ポリシー」といいます。）に従って、個人情報を適切に取り扱います。
-              </p>
+              <p className="text-sm sm:text-base leading-relaxed">武蔵下町情報舎（以下「当社」といいます。）は、お客様の個人情報の重要性を認識し、個人情報保護法及び関連法令等を遵守するとともに、以下のプライバシーポリシー（以下「本ポリシー」といいます。）に従って、個人情報を適切に取り扱います。</p>
             </div>
 
             <div>
               <h2 className="text-lg sm:text-xl font-bold text-gray-800 mb-3">1. 個人情報の定義</h2>
-              <p className="text-sm sm:text-base leading-relaxed">
-                本ポリシーにおいて「個人情報」とは、個人情報保護法にいう「個人情報」を指すものとし、生存する個人に関する情報であって、当該情報に含まれる氏名、生年月日、住所、電話番号、連絡先その他の記述等により特定の個人を識別できる情報及び容貌、指紋、声紋にかかるデータ、及び健康保険証の保険者番号などの当該情報単体から特定の個人を識別できる情報（個人識別情報）を指します。
-              </p>
+              <p className="text-sm sm:text-base leading-relaxed">本ポリシーにおいて「個人情報」とは、個人情報保護法にいう「個人情報」を指すものとし、生存する個人に関する情報であって、当該情報に含まれる氏名、生年月日、住所、電話番号、連絡先その他の記述等により特定の個人を識別できる情報及び容貌、指紋、声紋にかかるデータ、及び健康保険証の保険者番号などの当該情報単体から特定の個人を識別できる情報（個人識別情報）を指します。</p>
             </div>
 
             <div>
@@ -54,23 +57,17 @@ export default function PrivacyPage() {
 
             <div>
               <h2 className="text-lg sm:text-xl font-bold text-gray-800 mb-3">6. 個人情報の開示・訂正・削除</h2>
-              <p className="text-sm sm:text-base leading-relaxed">
-                お客様は、当社が保有する個人情報について、開示、訂正、利用停止、削除等を求めることができます。これらのご請求については、下記お問い合わせ先までご連絡ください。
-              </p>
+              <p className="text-sm sm:text-base leading-relaxed">お客様は、当社が保有する個人情報について、開示、訂正、利用停止、削除等を求めることができます。これらのご請求については、下記お問い合わせ先までご連絡ください。</p>
             </div>
 
             <div>
               <h2 className="text-lg sm:text-xl font-bold text-gray-800 mb-3">7. アクセス解析ツールに​ついて</h2>
-              <p className="text-sm sm:text-base leading-relaxed">
-                当社のウェブサイトでは、Googleによるアクセス解析ツール「Googleアナリティクス」を利用しています。このGoogleアナリティクスはトラフィックデータの収集のためにクッキー（Cookie）を使用しております。トラフィックデータは匿名で収集されており、個人を特定するものではありません。
-              </p>
+              <p className="text-sm sm:text-base leading-relaxed">当社のウェブサイトでは、Googleによるアクセス解析ツール「Googleアナリティクス」を利用しています。このGoogleアナリティクスはトラフィックデータの収集のためにクッキー（Cookie）を使用しております。トラフィックデータは匿名で収集されており、個人を特定するものではありません。</p>
             </div>
 
             <div>
               <h2 className="text-lg sm:text-xl font-bold text-gray-800 mb-3">8. プライバシーポリシーの変更</h2>
-              <p className="text-sm sm:text-base leading-relaxed">
-                本ポリシーの内容は、法令その他本ポリシーに別段の定めのある事項を除いて、ユーザーに通知することなく、変更することができるものとします。当社が別途定める場合を除いて、変更後のプライバシーポリシーは、本ウェブサイトに掲載したときから効力を生じるものとします。
-              </p>
+              <p className="text-sm sm:text-base leading-relaxed">本ポリシーの内容は、法令その他本ポリシーに別段の定めのある事項を除いて、ユーザーに通知することなく、変更することができるものとします。当社が別途定める場合を除いて、変更後のプライバシーポリシーは、本ウェブサイトに掲載したときから効力を生じるものとします。</p>
             </div>
 
             <div>
