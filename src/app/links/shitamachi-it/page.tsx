@@ -50,7 +50,7 @@ export default function LinksPage() {
         {/* プロフィール */}
         <div className="text-center mb-10">
           <div className="inline-block mb-4">
-            <Image src="/logo.webp" alt="武蔵下町情報舎 ロゴ" width={96} height={96} className="rounded shadow-md" />
+            <Image src="/logo.webp" alt="武蔵下町情報舎 ロゴ" width={96} height={96} className="rounded shadow-md" loading="eager" fetchPriority="high" />
           </div>
           <h1 className="text-xl sm:text-2xl font-bold text-pearl-bush-900 mb-2">武蔵下町情報舎</h1>
           <p className="text-sm sm:text-base text-pearl-bush-700">多摩地区のITサポート専門</p>
