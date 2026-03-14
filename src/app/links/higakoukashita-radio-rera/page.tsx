@@ -69,7 +69,7 @@ export default function LinksPage() {
         {/* プロフィール */}
         <div className="text-center mb-10">
           <div className="inline-block mb-4">
-            <Image src="/higakoukashita-radio-rera.png" alt="ヒガコウカシタ ラジオ・レラ ロゴ" width={96} height={96} className="rounded-full shadow-md" />
+            <Image src="/higakoukashita-radio-rera.webp" alt="ヒガコウカシタ ラジオ・レラ ロゴ" width={96} height={96} className="rounded-full shadow-md" loading="eager" fetchPriority="high" />
           </div>
           <h1 className="text-xl sm:text-2xl font-bold text-pearl-bush-900 mb-2">ヒガコウカシタ ラジオ・レラ</h1>
           <p className="text-sm sm:text-base text-pearl-bush-700">
