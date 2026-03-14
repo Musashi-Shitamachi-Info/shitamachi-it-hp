@@ -10,7 +10,7 @@ export default function Header() {
         <div className="flex flex-col sm:flex-row justify-between items-center gap-2 sm:gap-4">
           <Link href="/#top" className="text-lg sm:text-xl md:text-2xl font-bold">
             <div className="flex items-end gap-2">
-              <Image src="/logo.png" width="28" height="28" alt="" className="rounded" />
+              <Image src="/logo.webp" width="28" height="28" alt="" className="rounded" />
               武蔵下町情報舎
             </div>
           </Link>

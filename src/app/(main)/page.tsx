@@ -27,10 +27,7 @@ export default function Home() {
           </p>
         </div>
         <div className="text-center">
-          <Link
-            href="#contact"
-            className="inline-block bg-gradient-to-r from-red-500 to-red-600 text-white px-6 py-3 sm:px-8 sm:py-4 lg:px-10 lg:py-4 rounded-full text-base sm:text-lg font-bold hover:shadow-xl hover:-translate-y-1 transition-all duration-300 shadow-lg"
-          >
+          <Link href="#contact" className="inline-block bg-gradient-to-r from-red-500 to-red-600 text-white px-6 py-3 sm:px-8 sm:py-4 lg:px-10 lg:py-4 rounded-full text-base sm:text-lg font-bold hover:shadow-xl hover:-translate-y-1 transition-all duration-300 shadow-lg">
             まずは無料相談から
           </Link>
         </div>
@@ -54,18 +51,9 @@ export default function Home() {
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center text-gray-800 mb-8 sm:mb-10 md:mb-12">武蔵下町情報舎の強み</h2>
           <ul className="grid grid-cols-1 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8 list-none">
-            <StrengthCard
-              title="💻 現場で培った技術力"
-              description="ただホームページを作るだけでなく、「検索で見つけてもらいやすくする工夫」や「安全に使えるサイト作り」など、お客様のビジネスに本当に役立つ技術を提供します。"
-            />
-            <StrengthCard
-              title="🏪 地域密着のサポート"
-              description="地域に住み、地域の事業者との距離が近いからこそ実現できるきめ細やかなサポート。急なトラブル対応や機能追加にも迅速に対応し、導入後の運用支援まで継続的にサポートします。"
-            />
-            <StrengthCard
-              title="🎯 ワンストップIT支援"
-              description="Webアプリ開発、ITツール導入、SNS活用まで幅広く対応。事業成長に合わせて段階的にサービスを拡張でき、一つの窓口で全てのIT課題を解決できます。"
-            />
+            <StrengthCard title="💻 現場で培った技術力" description="ただホームページを作るだけでなく、「検索で見つけてもらいやすくする工夫」や「安全に使えるサイト作り」など、お客様のビジネスに本当に役立つ技術を提供します。" />
+            <StrengthCard title="🏪 地域密着のサポート" description="地域に住み、地域の事業者との距離が近いからこそ実現できるきめ細やかなサポート。急なトラブル対応や機能追加にも迅速に対応し、導入後の運用支援まで継続的にサポートします。" />
+            <StrengthCard title="🎯 ワンストップIT支援" description="Webアプリ開発、ITツール導入、SNS活用まで幅広く対応。事業成長に合わせて段階的にサービスを拡張でき、一つの窓口で全てのIT課題を解決できます。" />
           </ul>
         </div>
       </section>
@@ -90,16 +78,12 @@ export default function Home() {
       <section className="py-12 sm:py-16 md:py-20">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="flex items-center justify-center gap-2 sm:gap-4 mb-8 sm:mb-10 md:mb-12">
-            <Image src="/logo.png" alt="" width="48" height="48" className="rounded" />
+            <Image src="/logo.webp" alt="" width="48" height="48" className="rounded" />
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-800">武蔵下町情報舎について</h2>
           </div>
           <div className="space-y-4 sm:space-y-6">
-            <p className="text-base sm:text-lg text-gray-700 leading-relaxed sm:leading-loose text-left">
-              地域の中小企業や商店では、デジタル化の波に取り残されているケースが少なくありません。私たちは、現場で培った技術力と地域密着のサポート力を活かして、こうした地域の課題をITの力で解決したいと考えています。
-            </p>
-            <p className="text-base sm:text-lg text-gray-700 leading-relaxed sm:leading-loose text-left">
-              私たち武蔵下町情報舎は、単にシステムを作るだけでなくお客様の立場に立って本当に必要な機能を見極め、使いやすく効果的なITソリューションを提供します。ITの力で地域の事業者の成長を支援し、地域全体の活性化に貢献して参ります。
-            </p>
+            <p className="text-base sm:text-lg text-gray-700 leading-relaxed sm:leading-loose text-left">地域の中小企業や商店では、デジタル化の波に取り残されているケースが少なくありません。私たちは、現場で培った技術力と地域密着のサポート力を活かして、こうした地域の課題をITの力で解決したいと考えています。</p>
+            <p className="text-base sm:text-lg text-gray-700 leading-relaxed sm:leading-loose text-left">私たち武蔵下町情報舎は、単にシステムを作るだけでなくお客様の立場に立って本当に必要な機能を見極め、使いやすく効果的なITソリューションを提供します。ITの力で地域の事業者の成長を支援し、地域全体の活性化に貢献して参ります。</p>
           </div>
         </div>
       </section>
