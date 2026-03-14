@@ -23,7 +23,7 @@ const links = [
   },
   {
     label: "Stand.fm",
-    icon: <Image src="/standfm_icon.png" alt="Stand.fm" width={48} height={48} />,
+    icon: <Image src="/standfm_icon.webp" alt="Stand.fm" width={48} height={48} />,
     url: "https://stand.fm/channels/69991e02a26898585572aab2",
     description: "Stand.fmで聴く",
   },
