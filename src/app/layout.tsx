@@ -5,13 +5,26 @@ import { Noto_Sans_JP } from "next/font/google";
 import "./globals.css";
 import Footer from "@/components/footer";
 
+const baseUrl = new URL("https://shitamachi-it.work");
+const title = "武蔵下町情報舎";
+const description = "武蔵下町情報舎はITの力で地域の事業者の成長を支援し、地域全体の活性化に貢献して参ります。";
+
 export const metadata: Metadata = {
-  metadataBase: new URL("https://shitamachi-it.work"),
+  metadataBase: baseUrl,
   title: {
-    template: "%s | 武蔵下町情報舎",
-    default: "武蔵下町情報舎",
+    template: `%s | ${title}`,
+    default: title,
   },
-  description: "武蔵下町情報舎はITの力で地域の事業者の成長を支援し、地域全体の活性化に貢献して参ります。",
+  description: description,
+  openGraph: {
+    title: title,
+    description: description,
+    url: baseUrl.toString(),
+    type: "website",
+  },
+  facebook: {
+    appId: "2124250178412036",
+  },
 };
 
 // REF: https://zenn.dev/yuki_fujisawa/articles/4875c138b2fc33
