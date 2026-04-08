@@ -3,6 +3,9 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "プライバシーポリシー",
   description: "武蔵下町情報舎のプライバシーポリシーページ",
+  openGraph: {
+    url: "/privacy",
+  },
 };
 
 export default function PrivacyPage() {

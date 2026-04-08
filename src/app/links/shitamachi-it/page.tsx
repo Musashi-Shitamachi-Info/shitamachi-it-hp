@@ -5,6 +5,9 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "リンク集",
   description: "武蔵下町情報舎のSNS・リンク一覧ページ",
+  openGraph: {
+    url: "/links/shitamachi-it",
+  },
 };
 
 const links = [

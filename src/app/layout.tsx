@@ -19,7 +19,6 @@ export const metadata: Metadata = {
   openGraph: {
     title: title,
     description: description,
-    url: baseUrl.toString(),
     type: "website",
   },
   facebook: {
