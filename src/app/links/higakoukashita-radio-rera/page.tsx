@@ -5,9 +5,6 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "ヒガコウカシタ ラジオ・レラのリンク集",
   description: "東小金井発、起業・開業にチャレンジする人を応援するポッドキャストです🎙️",
-  openGraph: {
-    url: "/links/higakoukashita-radio-rera",
-  },
 };
 
 const links = [

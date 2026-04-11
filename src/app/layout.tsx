@@ -17,8 +17,6 @@ export const metadata: Metadata = {
   },
   description: description,
   openGraph: {
-    title: title,
-    description: description,
     type: "website",
   },
   facebook: {

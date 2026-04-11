@@ -1,16 +1,9 @@
-import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 
 import ServiceCard from "@/components/service-card";
 import StrengthCard from "@/components/strength-card";
 import TargetArea from "@/components/target-area";
-
-export const metadata: Metadata = {
-  openGraph: {
-    url: "/",
-  },
-};
 
 export default function Home() {
   return (
