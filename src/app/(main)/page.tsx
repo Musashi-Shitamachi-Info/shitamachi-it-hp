@@ -100,6 +100,11 @@ export default function Home() {
             <p className="text-base sm:text-lg text-gray-700 leading-relaxed sm:leading-loose text-left">地域の中小企業や商店では、デジタル化の波に取り残されているケースが少なくありません。私たちは、現場で培った技術力と地域密着のサポート力を活かして、こうした地域の課題をITの力で解決したいと考えています。</p>
             <p className="text-base sm:text-lg text-gray-700 leading-relaxed sm:leading-loose text-left">私たち武蔵下町情報舎は、単にシステムを作るだけでなくお客様の立場に立って本当に必要な機能を見極め、使いやすく効果的なITソリューションを提供します。ITの力で地域の事業者の成長を支援し、地域全体の活性化に貢献して参ります。</p>
           </div>
+          <div className="mt-8 sm:mt-10">
+            <Link href="/work" className="inline-block border-2 border-gray-700 text-gray-700 px-6 py-3 sm:px-8 sm:py-4 rounded-full text-base sm:text-lg font-bold hover:bg-gray-700 hover:text-white hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+              実績一覧を見る
+            </Link>
+          </div>
         </div>
       </section>
     </main>

@@ -19,6 +19,7 @@ export default function Header() {
               <NavLink href="/#services">サービス</NavLink>
               <NavLink href="/#strengths">強み</NavLink>
               <NavLink href="/#area">対応地域</NavLink>
+              <NavLink href="/work">実績</NavLink>
               <NavLink href="/#contact">お問い合わせ</NavLink>
             </ul>
           </nav>
