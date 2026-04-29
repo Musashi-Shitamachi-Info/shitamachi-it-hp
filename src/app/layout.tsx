@@ -4,8 +4,9 @@ import { Noto_Sans_JP } from "next/font/google";
 
 import "./globals.css";
 import Footer from "@/components/footer";
+import { BASE_URL } from "@/constants";
 
-const baseUrl = new URL("https://shitamachi-it.work");
+const baseUrl = new URL(BASE_URL);
 const title = "武蔵下町情報舎";
 const description = "武蔵下町情報舎はITの力で地域の事業者の成長を支援し、地域全体の活性化に貢献して参ります。";
 
