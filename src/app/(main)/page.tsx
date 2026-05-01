@@ -4,10 +4,25 @@ import Link from "next/link";
 import ServiceCard from "@/components/service-card";
 import StrengthCard from "@/components/strength-card";
 import TargetArea from "@/components/target-area";
+import { BASE_URL } from "@/constants";
+
+const breadcrumbJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    {
+      "@type": "ListItem",
+      position: 1,
+      name: "トップ",
+      item: BASE_URL,
+    },
+  ],
+};
 
 export default function Home() {
   return (
     <main>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
       {/* Hero Section */}
       <section id="top" className="py-12 sm:py-16 md:py-20">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">

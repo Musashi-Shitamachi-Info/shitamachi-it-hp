@@ -1,13 +1,35 @@
 import type { Metadata } from "next";
 
+import { BASE_URL } from "@/constants";
+
 export const metadata: Metadata = {
   title: "プライバシーポリシー",
   description: "武蔵下町情報舎のプライバシーポリシーページ",
 };
 
+const breadcrumbJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    {
+      "@type": "ListItem",
+      position: 1,
+      name: "トップ",
+      item: BASE_URL,
+    },
+    {
+      "@type": "ListItem",
+      position: 2,
+      name: "プライバシーポリシー",
+      item: `${BASE_URL}/privacy`,
+    },
+  ],
+};
+
 export default function PrivacyPage() {
   return (
     <main>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
       <section id="top" className="py-12 sm:py-16 md:py-20">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-800 mb-6 sm:mb-8 text-center">プライバシーポリシー</h1>
