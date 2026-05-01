@@ -5,11 +5,11 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "lint": "pnpm lint:typecheck && pnpm lint:next && pnpm lint:eslint && pnpm lint:markuplint",
+    "typecheck": "tsc --noEmit",
+    "lint": "pnpm lint:next && pnpm lint:eslint && pnpm lint:markuplint",
     "lint:next": "next lint",
     "lint:eslint": "eslint . --ext .js,.jsx,.ts,.tsx,.mjs",
     "lint:markuplint": "markuplint \"./src/**/*.{jsx,tsx}\"",
-    "lint:typecheck": "tsc --noEmit",
     "login": "wrangler login",
     "preview": "opennextjs-cloudflare build && opennextjs-cloudflare preview",
     "deploy": "opennextjs-cloudflare build && opennextjs-cloudflare deploy",
