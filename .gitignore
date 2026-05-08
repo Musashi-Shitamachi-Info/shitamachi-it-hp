@@ -22,6 +22,7 @@
 
 # misc
 .DS_Store
+
 *.pem
 
 # debug
@@ -46,3 +47,6 @@ next-env.d.ts
 # wrangler files
 .wrangler
 .dev.vars*
+
+# Claude Code
+.claude/settings.local.json
