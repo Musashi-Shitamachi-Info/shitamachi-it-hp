@@ -1,72 +1,65 @@
 {
-  $schema: 'https://docs.renovatebot.com/renovate-schema.json',
-  extends: [
-    'config:recommended',
-  ],
-  timezone: 'Asia/Tokyo',
-  schedule: [
-    'before 9am on monday',
-  ],
-  labels: [
-    'dependencies',
-  ],
+  $schema: "https://docs.renovatebot.com/renovate-schema.json",
+  extends: ["config:recommended"],
+  timezone: "Asia/Tokyo",
+  schedule: ["before 9am on monday"],
+  labels: ["dependencies"],
   dependencyDashboard: true,
   prConcurrentLimit: 5,
   automerge: false,
-  minimumReleaseAge: '14 days',
+  minimumReleaseAge: "14 days",
   packageRules: [
+    // --- グループ定義 ---
     {
-      description: '型定義・lint系は自動マージ',
-      matchUpdateTypes: [
-        'minor',
-        'patch',
-      ],
-      automerge: true,
-      matchPackageNames: [
-        '/^@types//',
-        '/eslint/',
-        '/prettier/',
-      ],
+      description: "Next.js関連をグループ化（eslint-config-nextはnextのバージョンに追従するため含める）",
+      groupName: "Next.js",
+      matchPackageNames: ["next", "react", "react-dom", "@next/third-parties", "eslint-config-next"],
     },
     {
-      description: 'devDependenciesのpatchは自動マージ',
-      matchDepTypes: [
-        'devDependencies',
-      ],
-      matchUpdateTypes: [
-        'patch',
-      ],
+      description: "Tailwind CSSをグループ化",
+      groupName: "Tailwind CSS",
+      matchPackageNames: ["tailwindcss", "@tailwindcss/postcss"],
+    },
+    {
+      description: "TypeScript・型定義をグループ化",
+      groupName: "TypeScript & 型定義",
+      matchPackageNames: ["typescript", "@types/node", "@types/react", "@types/react-dom"],
+    },
+    {
+      description: "ESLint関連をグループ化",
+      groupName: "ESLint",
+      matchPackageNames: ["eslint", "@eslint/eslintrc", "eslint-plugin-unused-imports"],
+    },
+    {
+      description: "Markuplint関連をグループ化",
+      groupName: "Markuplint",
+      matchPackageNames: ["markuplint", "@markuplint/jsx-parser", "@markuplint/react-spec"],
+    },
+    // --- automerge・ラベル設定（グループ定義より後ろに置いて groupName を上書きしないよう注意） ---
+    {
+      description: "型定義・lint系は自動マージ",
+      matchUpdateTypes: ["minor", "patch"],
+      automerge: true,
+      matchPackageNames: ["/^@types//", "/eslint/", "/prettier/"],
+    },
+    {
+      description: "devDependenciesのpatchは自動マージ",
+      matchDepTypes: ["devDependencies"],
+      matchUpdateTypes: ["patch"],
       automerge: true,
     },
     {
-      description: 'Cloudflare系は要注意・手動確認',
-      matchPackageNames: [
-        'wrangler',
-        '@cloudflare/next-on-pages',
-        '@opennextjs/cloudflare',
-        '@cloudflare/workers-types',
-      ],
+      description: "Cloudflare系は要注意・手動確認",
+      groupName: "Cloudflare",
+      matchPackageNames: ["wrangler", "@cloudflare/next-on-pages", "@opennextjs/cloudflare", "@cloudflare/workers-types"],
       automerge: false,
-      labels: [
-        'dependencies',
-        'cloudflare',
-        'review-required',
-      ],
+      labels: ["dependencies", "cloudflare", "review-required"],
     },
     {
-      description: 'Next.js本体・Reactはメジャーのみ分離',
-      matchPackageNames: [
-        'next',
-        'react',
-        'react-dom',
-      ],
-      matchUpdateTypes: [
-        'major',
-      ],
-      labels: [
-        'dependencies',
-        'major-update',
-      ],
+      description: "Next.js本体・Reactはメジャーのみ分離",
+      matchPackageNames: ["next", "react", "react-dom"],
+      matchUpdateTypes: ["major"],
+      labels: ["dependencies", "major-update"],
     },
   ],
 }
