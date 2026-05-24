@@ -9,7 +9,7 @@
     "typecheck": "tsc --noEmit",
     "lint": "pnpm lint:next && pnpm lint:eslint && pnpm lint:markuplint",
     "lint:next": "next lint",
-    "lint:eslint": "eslint . --ext .js,.jsx,.ts,.tsx,.mjs",
+    "lint:eslint": "eslint .",
     "lint:markuplint": "markuplint \"./src/**/*.{jsx,tsx}\"",
     "login": "wrangler login",
     "preview": "opennextjs-cloudflare build && opennextjs-cloudflare preview",
