@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "build:cf": "opennextjs-cloudflare build",
     "typecheck": "tsc --noEmit",
     "lint": "pnpm lint:next && pnpm lint:eslint && pnpm lint:markuplint",
     "lint:next": "next lint",

@@ -11,5 +11,8 @@ run = "pnpm run typecheck"
 [tasks.lint]
 run = "pnpm run lint"
 
+[tasks.build]
+run = "pnpm run build:cf"
+
 [tasks.ci]
-depends = ["typecheck", "lint"]
+depends = ["typecheck", "lint", "build"]
