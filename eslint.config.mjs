@@ -12,11 +12,12 @@ const compat = new FlatCompat({
 });
 
 const eslintConfig = [
-  ...compat.extends("next/core-web-vitals", "next/typescript"),
   {
     ignores: ["**/.next/**", "**/.open-next/**", "**/node_modules/**", "**/out**/**", "cloudflare-env.d.ts", "next-env.d.ts"],
   },
+  ...compat.extends("next/core-web-vitals", "next/typescript"),
   {
+    files: ["**/*.{js,jsx,ts,tsx,mjs}"],
     plugins: {
       "unused-imports": unusedImports,
     },
