@@ -11,6 +11,8 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     name: Deploy to Cloudflare Workers
+    timeout-minutes: 15
+    environment: prod
 
     steps:
       - name: Checkout
