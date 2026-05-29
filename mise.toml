@@ -16,3 +16,6 @@ run = "pnpm run build:cf"
 
 [tasks.ci]
 depends = ["typecheck", "lint", "build"]
+
+[tasks.deploy]
+run = "pnpm run deploy"
