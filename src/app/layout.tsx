@@ -41,7 +41,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="ja" className={`${notoSansJp.className} scroll-smooth`}>
+    <html lang="ja" className={`${notoSansJp.className}`} data-scroll-behavior="smooth">
       <GoogleTagManager gtmId="GTM-WP3VK7M3" />
       <body>
         {children}
