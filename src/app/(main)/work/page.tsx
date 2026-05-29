@@ -10,28 +10,24 @@ export const metadata: Metadata = {
 
 const workItems: WorkItem[] = [
   {
-    category: "ホームページ制作",
     title: "エコノクエスト様 ブラウザゲーム制作",
     description: "金融教育カードゲーム「エコノクエスト」のランディングページとブラウザゲーム版を制作しました。Next.jsとTailwind CSS、React Hook Formを使用して、レスポンシブでユーザーフレンドリーなデザインを実現しています。",
     tags: ["Next.js", "Tailwind CSS", "React Hook Form"],
     link: "https://econo.quest/",
   },
   {
-    category: "ホームページ制作",
     title: "地域通貨ぶんじ様 HP制作",
     description: "国分寺の地域通貨「ぶんじ」に関するのホームページを制作しました。Next.jsとTailwind CSSを使用して、レスポンシブでユーザーフレンドリーなデザインを実現しています。",
     tags: ["Next.js", "Tailwind CSS"],
     link: "https://bunji.me/",
   },
   {
-    category: "ホームページ制作",
     title: "自社 HP制作",
     description: "自社のホームページを制作しました。Next.jsとTailwind CSSを使用して、レスポンシブでユーザーフレンドリーなデザインを実現しています。",
     tags: ["Next.js", "Tailwind CSS"],
     link: "https://shitamachi-it.work/",
   },
   {
-    category: "ホームページ制作",
     title: "ぶんじエネルギー様 HP制作",
     description: "ぶんじエネルギー様のホームページを制作しました。microCMSを使用して、クライアント様が簡単にコンテンツを更新できるようにしています。また、Resendを使用して、お問い合わせフォームからのメール送信機能も実装しています。",
     tags: ["Next.js", "Tailwind CSS", "microCMS", "Resend"],
