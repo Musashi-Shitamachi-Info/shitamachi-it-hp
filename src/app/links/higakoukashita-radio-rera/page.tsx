@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 
+import SpotifyEmbed from "@/components/spotify-embed";
+
 export const metadata: Metadata = {
   title: "ヒガコウカシタ ラジオ・レラのリンク集",
   description: "東小金井発、起業・開業にチャレンジする人を応援するポッドキャストです🎙️",
@@ -81,7 +83,11 @@ export default function LinksPage() {
 
         {/* Spotify 埋め込み */}
         <div className="mb-8">
-          <iframe title="ヒガコウカシタ ラジオ・レラ on Spotify" data-testid="embed-iframe" className="rounded-2xl w-full" src="https://open.spotify.com/embed/show/1SBSElBLwNwMiwwZoi0X8S?utm_source=generator&si=e98a4146c9a84d56" height="232" allowFullScreen allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy" />
+          <SpotifyEmbed
+            src="https://open.spotify.com/embed/show/1SBSElBLwNwMiwwZoi0X8S?utm_source=generator&si=e98a4146c9a84d56"
+            title="ヒガコウカシタ ラジオ・レラ on Spotify"
+            height={232}
+          />
         </div>
 
         {/* リンク一覧 */}
