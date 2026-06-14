@@ -57,7 +57,7 @@ const links = [
         <path fill="currentColor" d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1" />
       </svg>
     ),
-    url: "https://shitamachi-it.work/links/shitamachi-it/",
+    url: "/links/shitamachi-it/",
     description: "運営",
   },
 ];
@@ -67,7 +67,7 @@ export default function LinksPage() {
     <main className="min-h-screen bg-linear-to-br from-pearl-bush-50 to-pearl-bush-100 py-12 sm:py-16 md:py-20 px-4">
       <div className="max-w-md mx-auto">
         {/* プロフィール */}
-        <div className="text-center mb-10">
+        <div className="text-center mb-8">
           <div className="inline-block mb-4">
             <Image src="/higakoukashita-radio-rera.webp" alt="ヒガコウカシタ ラジオ・レラ ロゴ" width={96} height={96} className="rounded-full shadow-md" loading="eager" fetchPriority="high" />
           </div>
@@ -77,6 +77,11 @@ export default function LinksPage() {
             <span className="inline-block">起業・開業にチャレンジする人</span>
             <span className="inline-block">を応援するポッドキャストです🎙️</span>
           </p>
+        </div>
+
+        {/* Spotify 埋め込み */}
+        <div className="mb-8">
+          <iframe title="ヒガコウカシタ ラジオ・レラ on Spotify" data-testid="embed-iframe" className="rounded-2xl w-full" src="https://open.spotify.com/embed/show/1SBSElBLwNwMiwwZoi0X8S?utm_source=generator&si=e98a4146c9a84d56" height="232" allowFullScreen allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy" />
         </div>
 
         {/* リンク一覧 */}
