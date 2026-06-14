@@ -1,36 +1,51 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 武蔵下町情報舎 ウェブサイト
 
-## Getting Started
+武蔵下町情報舎（多摩地域の中小企業・個人事業主向け IT サポート）の公式ウェブサイトです。
 
-First, run the development server:
+## 技術スタック
+
+- **Next.js** (App Router)
+- **React**
+- **TypeScript**
+- **Tailwind CSS**
+- **Cloudflare** (OpenNext によるデプロイ)
+
+## 開発
+
+初回セットアップ:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+mise install       # Node.js / pnpm のバージョンを揃える
+mise run setup     # 依存パッケージのインストール
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+開発サーバーの起動:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+pnpm run dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+[http://localhost:3000](http://localhost:3000) でページを確認できます。
 
-## Learn More
+## コマンド一覧
 
-To learn more about Next.js, take a look at the following resources:
+| コマンド             | 説明                                     |
+| -------------------- | ---------------------------------------- |
+| `pnpm run dev`       | 開発サーバーを起動                       |
+| `pnpm run build`     | Next.js ビルド                           |
+| `pnpm run build:cf`  | Cloudflare 向けビルド                    |
+| `pnpm run preview`   | Cloudflare 環境でローカルプレビュー      |
+| `pnpm run deploy`    | Cloudflare へデプロイ                    |
+| `pnpm run lint`      | ESLint + markuplint によるコードチェック |
+| `pnpm run typecheck` | TypeScript 型チェック                    |
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## デプロイ
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+[opennextjs-cloudflare](https://github.com/opennextjs/opennextjs-cloudflare) を使用して Cloudflare Workers にデプロイしています。
 
-## Deploy on Vercel
+```bash
+pnpm run login
+pnpm run login:whoami
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+pnpm run deploy
+```
