@@ -13,7 +13,7 @@ const workItems: WorkItem[] = [
     title: "自社 HP制作",
     description: "自社のホームページを制作しました。Next.jsとTailwind CSSを使用して、レスポンシブでユーザーフレンドリーなデザインを実現しています。",
     tags: ["Next.js", "Tailwind CSS"],
-    link: "https://shitamachi-it.work/",
+    link: "https://github.com/Musashi-Shitamachi-Info/shitamachi-it-hp",
   },
   {
     title: "Pulse Vote Webアプリケーション制作",
