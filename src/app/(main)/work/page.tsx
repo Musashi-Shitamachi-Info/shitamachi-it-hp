@@ -1,11 +1,31 @@
 import type { Metadata } from "next";
 
 import WorkCard from "@/components/work-card";
+import { BASE_URL } from "@/constants";
 import type { WorkItem } from "@/types";
 
 export const metadata: Metadata = {
   title: "実績紹介",
   description: "武蔵下町情報舎のこれまでの実績・制作事例をご紹介します。",
+};
+
+const breadcrumbJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    {
+      "@type": "ListItem",
+      position: 1,
+      name: "トップ",
+      item: BASE_URL,
+    },
+    {
+      "@type": "ListItem",
+      position: 2,
+      name: "実績紹介",
+      item: `${BASE_URL}/work`,
+    },
+  ],
 };
 
 const workItems: WorkItem[] = [
@@ -44,6 +64,7 @@ const workItems: WorkItem[] = [
 export default function WorkPage() {
   return (
     <main>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
       <section id="top" className="py-12 sm:py-16 md:py-20">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-800 mb-4 text-center">実績紹介</h1>
