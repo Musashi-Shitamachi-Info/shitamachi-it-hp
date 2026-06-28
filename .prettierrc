@@ -1,0 +1,10 @@
+{
+  "overrides": [
+    {
+      "files": "*.json5",
+      "options": {
+        "printWidth": 1
+      }
+    }
+  ]
+}
