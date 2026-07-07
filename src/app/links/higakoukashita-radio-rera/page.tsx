@@ -30,6 +30,12 @@ const links = [
     description: "Stand.fmで聴く",
   },
   {
+    label: "LISTEN",
+    icon: <Image src="/LISTEN_logo.webp" alt="LISTEN" width={48} height={48} />,
+    url: "https://listen.style/p/higakoukashita-radio-rera",
+    description: "LISTENで聴く",
+  },
+  {
     label: "Instagram",
     icon: (
       <svg viewBox="0 0 512 512" className="size-9">
@@ -51,6 +57,16 @@ const links = [
     ),
     url: "https://www.facebook.com/higakoukashita.radio.rera",
     description: "Facebookページ",
+  },
+  {
+    label: "コウカシタLAB",
+    icon: (
+      <svg viewBox="0 0 24 24">
+        <path fill="currentColor" d="M6,22A3,3 0 0,1 3,19C3,18.4 3.18,17.84 3.5,17.37L9,7.81V6A1,1 0 0,1 8,5V4A2,2 0 0,1 10,2H14A2,2 0 0,1 16,4V5A1,1 0 0,1 15,6V7.81L20.5,17.37C20.82,17.84 21,18.4 21,19A3,3 0 0,1 18,22H6M5,19A1,1 0 0,0 6,20H18A1,1 0 0,0 19,19C19,18.79 18.93,18.59 18.82,18.43L16.53,14.47L14,17L8.93,11.93L5.18,18.43C5.07,18.59 5,18.79 5,19M13,10A1,1 0 0,0 12,11A1,1 0 0,0 13,12A1,1 0 0,0 14,11A1,1 0 0,0 13,10Z" />
+      </svg>
+    ),
+    url: "https://here-kougai.com/topics/topics-1018/",
+    description: "小金井市特定創業支援等事業の実践型ワークショップ「コウカシタLAB」から始まりました",
   },
   {
     label: "武蔵下町情報舎",
@@ -83,17 +99,13 @@ export default function LinksPage() {
 
         {/* Spotify 埋め込み */}
         <div className="mb-8">
-          <SpotifyEmbed
-            src="https://open.spotify.com/embed/show/1SBSElBLwNwMiwwZoi0X8S?utm_source=generator&si=e98a4146c9a84d56"
-            title="ヒガコウカシタ ラジオ・レラ on Spotify"
-            height={232}
-          />
+          <SpotifyEmbed src="https://open.spotify.com/embed/show/1SBSElBLwNwMiwwZoi0X8S?utm_source=generator&si=e98a4146c9a84d56" title="ヒガコウカシタ ラジオ・レラ on Spotify" height={232} />
         </div>
 
         {/* リンク一覧 */}
         <ul className="flex flex-col gap-4">
           {links.map((link) => (
-            <li key={link.label} className="even:pb-4 even:border-b-2 even:border-pearl-bush-300 even:border-dashed">
+            <li key={link.label} className="nth-[3n]:pb-4 nth-[3n]:border-b-2 nth-[3n]:border-pearl-bush-300 nth-[3n]:border-dashed">
               <Link href={link.url} target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 w-full bg-white border border-pearl-bush-200 rounded-2xl px-5 py-4 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-300">
                 <div className="w-8 shrink-0" aria-hidden="true">
                   {link.icon}
