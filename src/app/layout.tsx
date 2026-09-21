@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import { Noto_Sans_JP } from "next/font/google";
 
 import "./globals.css";
+import DatadogInit from "@/components/datadog-init";
 import Footer from "@/components/footer";
 import { BASE_URL } from "@/constants";
 
@@ -44,6 +45,7 @@ export default function RootLayout({
     <html lang="ja" className={`${notoSansJp.className}`} data-scroll-behavior="smooth">
       <GoogleTagManager gtmId="GTM-WP3VK7M3" />
       <body>
+        <DatadogInit />
         {children}
         <Footer />
       </body>
